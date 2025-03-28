@@ -4,39 +4,107 @@
   <meta charset="UTF-8">
   <title>SCAT MR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLE -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-uWz8HrkVgxkReVx8eZ0gQpgpgYzD/JYAXWYzVdZkxW30FRfZEDTC3v8xx2xnFYgggMlNLJb3ScGUKL3ZPcl9Cg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span><i class="fas fa-map-marker-alt"></i> TV-ZEINA, 276, Lot. NAJAH, Nouakchott</span>
+      <span><i class="fas fa-phone-alt"></i> 46 57 88 23</span>
+      <span><i class="fas fa-envelope"></i> <a href="mailto:abdellah.mohamedou@gmail.com">abdellah.mohamedou@gmail.com</a></span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
   <header>
-    <h1>SCAT MR</h1>
-    <p>Bureau de Contrôle et d’Assistance Techniques</p>
+    <div class="container navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="SCAT MR Logo">
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">ACCUEIL</a></li>
+          <li><a href="#activites">NOS ACTIVITÉS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="services">
-      <h2>Nos Activités</h2>
-      <ul>
-        <li>Contrôle technique des constructions</li>
-        <li>Industrie</li>
-        <li>Routes</li>
-        <li>Eau, Environnement</li>
-        <li>Sécurité - Équipements</li>
-        <li>Audit - Diagnostics</li>
-        <li>Inspections & Assistance Technique</li>
-        <li>Qualité</li>
-      </ul>
-    </section>
+  <!-- Hero -->
+  <section class="hero-banner">
+    <div class="hero-text">
+      <h1>SCAT MR</h1>
+      <p>Bureau de Contrôle et d’Assistance Techniques</p>
+    </div>
+  </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p><strong>Adresse:</strong> TV-ZEINA, 276, Lot. NAJAH, Nouakchott</p>
-      <p><strong>Téléphone:</strong> 46 57 88 23</p>
-      <p><strong>Email:</strong> <a href="mailto:abdellah.mohamedou@gmail.com">abdellah.mohamedou@gmail.com</a></p>
-    </section>
-  </main>
+  <!-- Accueil Section -->
+  <section id="accueil" class="info-boxes container">
+    <div class="info-box">
+      <i class="fas fa-lightbulb"></i>
+      <h3>Indépendance</h3>
+      <p>L’objet de la SCAT Internationale S.A., sa forme juridique et la composition du capital font que l’entreprise et son personnel ne sont soumis à aucune pression commerciale, financière ou autre pouvant influencer leur jugement technique.</p>
+    </div>
+    <div class="info-box">
+      <i class="fas fa-user-tie"></i>
+      <h3>Professionnalisme</h3>
+      <p>La Scat Internationale dispose d’outils et d’experts capables de répondre aux sollicitations d’assistance technique et de contrôle de nombreux clients de secteurs divers, notamment dans la construction et l’assistance technique</p>
+    </div>
+    <div class="info-box">
+      <i class="fas fa-handshake"></i>
+      <h3>Expérience</h3>
+      <p>La SCAT Internationale S.A. bénéficie de conventions de partenariat d’assistance technique avec des organismes internationaux mondialement reconnus dans le domaine du contrôle technique, de la formation interne, et de l’assistanat technique.</p>
+    </div>
+  </section>
 
+  <!-- Nos Activités -->
+  <section id="activites" class="section container">
+    <h2>NOS ACTIVITÉS</h2>
+    <div class="activities-grid">
+      <div class="activity">Contrôle technique de bâtiments</div>
+      <div class="activity">Suivi et assistance de projets industriels</div>
+      <div class="activity">Inspection de sécurité des équipements</div>
+      <div class="activity">Études environnementales et hydrauliques</div>
+      <div class="activity">Supervision de chantiers routiers</div>
+      <div class="activity">Audits qualité et diagnostics techniques</div>
+      <div class="activity">Formation et accompagnement technique</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
+    <h2>CONTACT</h2>
+    <p><strong>Adresse:</strong> TV-ZEINA, 276, Lot. NAJAH, Nouakchott</p>
+    <p><strong>Téléphone:</strong> 46 57 88 23</p>
+    <p><strong>Email:</strong> <a href="mailto:abdellah.mohamedou@gmail.com">abdellah.mohamedou@gmail.com</a></p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=TV-ZEINA,+276,+Lot.+NAJAH,+Nouakchott&output=embed" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 SCAT MR — Tous droits réservés</p>
+    <div class="container">
+      <p>&copy; 2025 SCAT MR — Tous droits réservés</p>
+    </div>
   </footer>
 </body>
 </html>
