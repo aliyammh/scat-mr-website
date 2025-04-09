@@ -50,6 +50,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   border-bottom: 1px solid #eee;
+  position: relative;
 }
 
 .logo img {
@@ -59,19 +60,13 @@ header {
   display: block;
 }
 
-/* Hamburger and Nav */
-.menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-}
-
+/* Nav links desktop */
 .nav-links {
+  list-style: none;
   display: flex;
   gap: 30px;
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .nav-links li a {
@@ -86,9 +81,20 @@ header {
   color: #009639;
 }
 
-/* Hero Slider */
+/* Hamburger */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Hero Slider Section */
 .hero-slider {
-  margin-top: 80px;
+  margin-top: 80px; /* fixed bar height */
   height: 500px;
   width: 100%;
   background-size: cover;
@@ -105,7 +111,7 @@ header {
   box-sizing: border-box;
 }
 
-.hero-slider .hero-text {
+.hero-text {
   z-index: 2;
 }
 
@@ -154,7 +160,7 @@ header {
   line-height: 1.6;
 }
 
-/* Activities */
+/* Activities Section */
 .section {
   padding: 60px 0;
 }
@@ -182,7 +188,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Map */
+/* Contact Map */
 .map-container {
   margin-top: 20px;
   border-radius: 10px;
@@ -198,46 +204,36 @@ footer {
   margin-top: 60px;
 }
 
-/* Mobile Styles */
+/* ✅ Responsive Design */
 @media (max-width: 768px) {
   .top-bar {
     display: none;
   }
 
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
   .nav-links {
-    display: none;
     flex-direction: column;
+    background: white;
     position: absolute;
     top: 100%;
     right: 0;
-    background: white;
     width: 100%;
     height: 50vh;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+    display: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.open {
     display: flex;
   }
 
-  .hero-slider h1 {
-    font-size: 28px;
+  .menu-icon {
+    display: block;
   }
 
-  .hero-slider p {
-    font-size: 16px;
+  .navbar {
+    flex-direction: row;
   }
 
   .info-boxes {
@@ -250,7 +246,30 @@ footer {
     gap: 15px;
   }
 
+  .hero-slider h1 {
+    font-size: 28px;
+  }
+
+  .hero-slider p {
+    font-size: 16px;
+  }
+
   footer {
     padding: 20px 10px;
+  }
+}
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: none;
   }
 }

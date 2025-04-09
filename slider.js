@@ -1,7 +1,6 @@
+// Background Image Slider
 window.addEventListener("load", function () {
   const slider = document.getElementById("image-slider");
-  const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
 
   const images = [
     "images/slide1.png",
@@ -21,10 +20,10 @@ window.addEventListener("load", function () {
 
   showSlide();
   setInterval(showSlide, 3000);
-
-  if (menuToggle) {
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-    });
-  }
 });
+
+// Mobile Menu Toggle
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("open");
+}

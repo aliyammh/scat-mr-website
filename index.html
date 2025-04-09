@@ -5,7 +5,7 @@
   <title>SCAT MR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -27,9 +27,13 @@
       <div class="logo">
         <img src="images/logo.png" alt="SCAT MR Logo">
       </div>
-      <i class="fas fa-bars menu-icon" id="menu-toggle"></i>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
       <nav>
-        <ul class="nav-links" id="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="#">ACCUEIL</a></li>
           <li><a href="#activites">NOS ACTIVITÉS</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -38,7 +42,7 @@
     </div>
   </header>
 
-  <!-- Hero Slider -->
+  <!-- Hero Banner -->
   <section class="hero-slider" id="image-slider">
     <div class="hero-text">
       <h1>SCAT MR</h1>
@@ -46,26 +50,26 @@
     </div>
   </section>
 
-  <!-- Info Section -->
+  <!-- Accueil Section -->
   <section id="accueil" class="info-boxes container">
     <div class="info-box">
       <i class="fas fa-lightbulb"></i>
       <h3>Indépendance</h3>
-      <p>L’objet de la SCAT Internationale S.A. garantit un jugement technique libre de toute pression commerciale ou financière.</p>
+      <p>L’objet de la SCAT Internationale S.A. est d’agir librement sans pression sur les jugements techniques.</p>
     </div>
     <div class="info-box">
       <i class="fas fa-user-tie"></i>
       <h3>Professionnalisme</h3>
-      <p>Nos experts interviennent dans divers secteurs, notamment la construction et l’assistance technique.</p>
+      <p>Nos experts répondent aux besoins de contrôle technique et d’assistance dans divers secteurs.</p>
     </div>
     <div class="info-box">
       <i class="fas fa-handshake"></i>
       <h3>Expérience</h3>
-      <p>Nous collaborons avec des organismes internationaux pour le contrôle technique, la formation et l’accompagnement.</p>
+      <p>SCAT MR est partenaire de structures internationales dans les domaines du contrôle et de la formation.</p>
     </div>
   </section>
 
-  <!-- Activités -->
+  <!-- Nos Activités -->
   <section id="activites" class="section container">
     <h2>NOS ACTIVITÉS</h2>
     <div class="activities-grid">
@@ -97,7 +101,7 @@
     </div>
   </footer>
 
-  <!-- JS -->
+  <!-- JavaScript -->
   <script src="slider.js"></script>
 </body>
 </html>
