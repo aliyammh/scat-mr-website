@@ -4,6 +4,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #fff;
   color: #333;
+  padding-top: 100px;
 }
 
 .container {
@@ -206,6 +207,9 @@ footer {
 
 /* ✅ Responsive Design */
 @media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
   .top-bar {
     display: none;
   }
