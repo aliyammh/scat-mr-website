@@ -5,13 +5,9 @@
   <title>SCAT MR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- STYLE -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +17,7 @@
     <div class="container">
       <span><i class="fas fa-map-marker-alt"></i> TV-ZEINA, 276, Lot. NAJAH, Nouakchott</span>
       <span><i class="fas fa-phone-alt"></i> 46 57 88 23</span>
-      <span><i class="fas fa-envelope"></i> <a href="mailto:abdellah.mohamedou@gmail.com">scatmr2019@gmail.com</a></span>
+      <span><i class="fas fa-envelope"></i> <a href="mailto:scatmr2019@gmail.com">scatmr2019@gmail.com</a></span>
     </div>
   </div>
 
@@ -31,8 +27,9 @@
       <div class="logo">
         <img src="images/logo.png" alt="SCAT MR Logo">
       </div>
+      <i class="fas fa-bars menu-icon" id="menu-toggle"></i>
       <nav>
-        <ul>
+        <ul class="nav-links" id="nav-links">
           <li><a href="#">ACCUEIL</a></li>
           <li><a href="#activites">NOS ACTIVITÉS</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -41,7 +38,7 @@
     </div>
   </header>
 
-  <!-- Hero Banner -->
+  <!-- Hero Slider -->
   <section class="hero-slider" id="image-slider">
     <div class="hero-text">
       <h1>SCAT MR</h1>
@@ -49,27 +46,26 @@
     </div>
   </section>
 
-
-  <!-- Accueil Section -->
+  <!-- Info Section -->
   <section id="accueil" class="info-boxes container">
     <div class="info-box">
       <i class="fas fa-lightbulb"></i>
       <h3>Indépendance</h3>
-      <p>L’objet de la SCAT Internationale S.A., sa forme juridique et la composition du capital font que l’entreprise et son personnel ne sont soumis à aucune pression commerciale, financière ou autre pouvant influencer leur jugement technique.</p>
+      <p>L’objet de la SCAT Internationale S.A. garantit un jugement technique libre de toute pression commerciale ou financière.</p>
     </div>
     <div class="info-box">
       <i class="fas fa-user-tie"></i>
       <h3>Professionnalisme</h3>
-      <p>La Scat Internationale dispose d’outils et d’experts capables de répondre aux sollicitations d’assistance technique et de contrôle de nombreux clients de secteurs divers, notamment dans la construction et l’assistance technique</p>
+      <p>Nos experts interviennent dans divers secteurs, notamment la construction et l’assistance technique.</p>
     </div>
     <div class="info-box">
       <i class="fas fa-handshake"></i>
       <h3>Expérience</h3>
-      <p>La SCAT Internationale S.A. bénéficie de conventions de partenariat d’assistance technique avec des organismes internationaux mondialement reconnus dans le domaine du contrôle technique, de la formation interne, et de l’assistanat technique.</p>
+      <p>Nous collaborons avec des organismes internationaux pour le contrôle technique, la formation et l’accompagnement.</p>
     </div>
   </section>
 
-  <!-- Nos Activités -->
+  <!-- Activités -->
   <section id="activites" class="section container">
     <h2>NOS ACTIVITÉS</h2>
     <div class="activities-grid">
@@ -88,7 +84,7 @@
     <h2>CONTACT</h2>
     <p><strong>Adresse:</strong> TV-ZEINA, 276, Lot. NAJAH, Nouakchott</p>
     <p><strong>Téléphone:</strong> 46 57 88 23</p>
-    <p><strong>Email:</strong> <a href="mailto:abdellah.mohamedou@gmail.com">scatmr2019@gmail.com</a></p>
+    <p><strong>Email:</strong> <a href="mailto:scatmr2019@gmail.com">scatmr2019@gmail.com</a></p>
     <div class="map-container">
       <iframe src="https://www.google.com/maps?q=TV-ZEINA,+276,+Lot.+NAJAH,+Nouakchott&output=embed" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
     </div>
@@ -101,7 +97,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- JS -->
   <script src="slider.js"></script>
 </body>
 </html>
