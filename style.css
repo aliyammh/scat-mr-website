@@ -208,10 +208,14 @@ footer {
 /* ✅ Responsive Design */
 @media (max-width: 768px) {
   body {
-    padding-top: 60px;
+    margin: 0;
+    padding: 0;
   }
   .top-bar {
     display: none;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .nav-links {
@@ -276,4 +280,16 @@ footer {
     justify-content: flex-end;
     box-shadow: none;
   }
+}
+
+.mobile-header {
+  position: sticky; /* or fixed if you want it fully locked */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  background-color: white;
+  margin: 0;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
