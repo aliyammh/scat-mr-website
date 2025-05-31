@@ -1,4 +1,3 @@
-// Background Image Slider
 window.addEventListener("load", function () {
   const slider = document.getElementById("image-slider");
 
@@ -24,6 +23,16 @@ window.addEventListener("load", function () {
 
 // Mobile Menu Toggle
 function toggleMenu() {
-  const nav = document.getElementById("navLinks");
+  const nav = document.getElementById("nav-links");
   nav.classList.toggle("open");
 }
+
+// Close menu when a link is clicked (on mobile)
+document.querySelectorAll("#nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    const nav = document.getElementById("nav-links");
+    if (nav.classList.contains("open")) {
+      nav.classList.remove("open");
+    }
+  });
+});

@@ -5,7 +5,7 @@
   <title>SCAT MR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Styles -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -27,22 +27,19 @@
       <div class="logo">
         <img src="images/logo.png" alt="SCAT MR Logo">
       </div>
-
-      <div class="menu-icon" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
-
+      <i class="fas fa-bars menu-icon" id="menu-toggle" onclick="toggleMenu()"></i>
       <nav>
-        <ul class="nav-links" id="navLinks">
+        <ul class="nav-links" id="nav-links">
           <li><a href="#">ACCUEIL</a></li>
           <li><a href="#activites">NOS ACTIVITÉS</a></li>
+          <li><a href="#engagement">À propos</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Banner -->
+  <!-- Hero Slider -->
   <section class="hero-slider" id="image-slider">
     <div class="hero-text">
       <h1>SCAT MR</h1>
@@ -50,26 +47,26 @@
     </div>
   </section>
 
-  <!-- Accueil Section -->
+  <!-- Info Section -->
   <section id="accueil" class="info-boxes container">
     <div class="info-box">
       <i class="fas fa-lightbulb"></i>
       <h3>Indépendance</h3>
-      <p>L’objet de la SCAT Internationale S.A. est d’agir librement sans pression sur les jugements techniques.</p>
+      <p>L’objet de la SCAT Internationale S.A. garantit un jugement technique libre de toute pression commerciale ou financière.</p>
     </div>
     <div class="info-box">
       <i class="fas fa-user-tie"></i>
       <h3>Professionnalisme</h3>
-      <p>Nos experts répondent aux besoins de contrôle technique et d’assistance dans divers secteurs.</p>
+      <p>Nos experts interviennent dans divers secteurs, notamment la construction et l’assistance technique.</p>
     </div>
     <div class="info-box">
       <i class="fas fa-handshake"></i>
       <h3>Expérience</h3>
-      <p>SCAT MR est partenaire de structures internationales dans les domaines du contrôle et de la formation.</p>
+      <p>Nous collaborons avec des organismes internationaux pour le contrôle technique, la formation et l’accompagnement.</p>
     </div>
   </section>
 
-  <!-- Nos Activités -->
+  <!-- Activités -->
   <section id="activites" class="section container">
     <h2>NOS ACTIVITÉS</h2>
     <div class="activities-grid">
@@ -83,6 +80,37 @@
     </div>
   </section>
 
+  <!-- About / Engagement Section -->
+<section id="engagement" class="section container">
+  <h2>À propos</h2>
+
+  <!-- Mot du Directeur -->
+  <div class="info-box">
+    <h3>Mot du Directeur</h3>
+    <p>Nous sommes très heureux de vous accueillir sur le site de notre société SCAT MR. Notre objectif est de vous aider à prévenir les risques techniques et à répondre à vos enjeux réglementaires.</p>
+    <a href="documents/mot_du_directeur.pdf" target="_blank">Lire le mot complet</a>
+
+
+  </div>
+  <!-- Politique Qualité -->
+  <div class="info-box">
+    <h3>Politique Qualité</h3>
+    <p>SCAT MR s'engage à améliorer continuellement son système de management de la qualité conformément à la norme ISO 9001:2015.</p>
+
+    <a href="documents/politique_qualite.pdf" target="_blank">Lire la politique complète</a>
+  </div>
+</section>
+<section id="engagement" class="section container">
+<h2>Certificat</h2>
+  <!-- Certificat ISO -->
+  <div class="info-box">
+    <img src="images/certificat-iso.jpg" alt="Certificat ISO 9001:2015" style="max-width:100%; height:auto; border: 1px solid #ccc; border-radius: 8px;">
+  </div>
+
+
+</section>
+
+
   <!-- Contact -->
   <section id="contact" class="section container">
     <h2>CONTACT</h2>
@@ -90,7 +118,18 @@
     <p><strong>Téléphone:</strong> 46 57 88 23</p>
     <p><strong>Email:</strong> <a href="mailto:scatmr2019@gmail.com">scatmr2019@gmail.com</a></p>
     <div class="map-container">
-      <iframe src="https://www.google.com/maps?q=TV-ZEINA,+276,+Lot.+NAJAH,+Nouakchott&output=embed" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6710.848799008918!2d-15.9728906!3d18.1251875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe96526c16ece9bd%3A0x96c897dd19d428e4!2s42GG%2B3RH%2C%20Nouakchott%2C%20Mauritania!5e0!3m2!1sen!2s!4v1717152749583!5m2!1sen!2s"
+  width="100%"
+  height="350"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+
     </div>
   </section>
 
@@ -101,7 +140,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- JS -->
   <script src="slider.js"></script>
 </body>
 </html>
